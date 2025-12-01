@@ -1,0 +1,115 @@
+/* BANNER */
+.banner {
+    background: url(havard.jpg); /* Đặt hình nền cho banner */
+    background-size: cover;       /* Hình nền phủ toàn bộ khung banner, không bị méo */
+    padding: 40px 70px;          /* Khoảng cách bên trong: 120px trên/dưới, 40px trái/phải */
+    color: white;                 /* Màu chữ trắng trong banner */
+}
+
+.banner-content {
+    width: 80%;          /* chiều rộng khung nội dung */
+    margin: 0 auto;      /* căn giữa khung nội dung */
+    text-align: center;  /* căn giữa các nội dung inline như button, text */
+}
+
+.banner h1 {
+    font-size: 48px;              /* Kích thước chữ tiêu đề */
+    font-weight: 800;             /* Độ đậm chữ tiêu đề */
+}
+
+.banner .start-btn {
+    margin-top: 15px;             /* Khoảng cách trên nút so với phần trên */
+    padding: 12px 25px;           /* Khoảng cách trong nút: 12px trên/dưới, 25px trái/phải */
+    background: #ffc107;        /* Màu nền nút */
+    border: none;                 /* Không viền */
+    font-weight: 600;             /* Độ đậm chữ nút */
+}
+
+.banner-boxes {
+    display: flex;                /* Hiển thị các box theo hàng ngang */
+    gap: 25px;                    /* Khoảng cách giữa các box */
+    margin-top: 40px;             /* Khoảng cách trên so với nội dung banner */
+}
+
+.banner-boxes .box {
+    background: #0b2c59c0;        /* Màu nền bán trong suốt cho box */
+    padding: 20px;                /* Khoảng cách bên trong box */
+    width: 400px;                 /* Chiều rộng cố định của box */
+    border-radius: 5px;           /* Bo góc box */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng mượt */
+}
+
+.banner-boxes .box:hover {
+    transform: scale(1.05);       /* Phóng to khung box */
+    box-shadow: 0 8px 18px rgba(0,0,0,0.3); /* Đổ bóng đẹp khi hover */
+}
+
+
+    /* COURSES */
+    .courses {
+        text-align: center;           /* Canh giữa toàn bộ nội dung */
+        padding: 70px 40px;           /* Khoảng cách bên trong: 50px trên/dưới, 40px trái/phải */
+    }
+
+    .course-container {
+        display: grid;                /* Dùng grid để sắp xếp khóa học */
+        grid-template-columns: repeat(3, 1fr); /* 3 cột bằng nhau */
+        gap: 25px;                    /* Khoảng cách giữa các phần tử grid */
+        margin-top: 30px;             /* Khoảng cách trên so với tiêu đề */
+        max-width: 120Spx;            /* Giới hạn chiều rộng tối đa container */
+        margin-left: auto;            /* Căn trái tự động */
+        margin-right: auto;           /* Căn phải tự động → căn giữa container */
+    }
+
+    .course-item {
+        border: 1px solid #ddd;       /* Viền nhẹ quanh từng khóa học */
+        padding-bottom: 20px;         /* Khoảng cách dưới */
+        transition: transform 0.3s ease;   /* Hiệu ứng mượt khi phóng */
+        overflow: hidden;                  /* Ngăn nội dung tràn ra ngoài khi phóng */
+}
+    .course-item:hover {
+        transform: scale(1.07);            /* Phóng to nguyên khung */
+        border-color: #ff5722;             /* (tuỳ chọn) đổi viền khi hover cho đẹp */
+}
+
+        .course-item img {
+            width: 400px;        /* Chiều rộng ảnh (bạn muốn bao nhiêu thì đổi) */
+            height: 200px;       /* Chiều cao ảnh */
+            object-fit: cover;   /* Giữ tỉ lệ, cắt phần dư */
+            display: block;      /* Giúp ảnh không bị khoảng trắng dưới */
+            margin: 0 auto;      /* Căn giữa ảnh trong khung */
+}
+
+    .read-btn {
+        margin-top: 10px;             /* Khoảng cách trên nút */
+        padding: 10 px 15px;            /* Khoảng cách trong nút */
+        background: #ff5722;          /* Màu nền nút */
+        color: white;                 /* Màu chữ */
+        border: none;                 /* Không viền */
+    }
+
+/* LECTURERS */
+.lecturers {
+    text-align: center;           /* Canh giữa nội dung */
+    padding: 50px 40px;           /* Khoảng cách bên trong */
+}
+
+.lecturer-container {
+    display: flex;                /* Hiển thị giảng viên theo hàng ngang */
+    justify-content: center;      /* Căn giữa các giảng viên */
+    gap: 30px;                    /* Khoảng cách giữa các giảng viên */
+    margin-top: 30px;             /* Khoảng cách trên so với tiêu đề */
+    max-width: 1200px;            /* Giới hạn chiều rộng tối đa container */
+    margin-left: auto;            /* Căn trái tự động */
+    margin-right: auto;           /* Căn phải tự động → căn giữa container */
+}
+
+.lecturer-item img {
+    width: 300px;                 /* Chiều rộng ảnh giảng viên */
+}
+
+.stars {
+    margin-top: 8px;              /* Khoảng cách trên so với tên giảng viên */
+    color: gold;                  /* Màu vàng cho sao */
+    font-size: 18px;              /* Kích thước chữ sao */
+}

@@ -1,0 +1,38 @@
+/* HEADER */
+.header {
+    width: 100%;                /* Chiều rộng header bằng toàn bộ trang */
+    height: 70px;               /* Chiều cao header */
+    background: #0b2c59;        /* Màu nền header */
+    color: white;               /* Màu chữ mặc định bên trong header */
+    display: flex;              /* Dùng flexbox để sắp xếp các phần tử bên trong */
+    align-items: center;        /* Canh giữa theo chiều dọc */
+    justify-content: space-between; /* Khoảng cách đều giữa logo, menu và nút */
+    padding: 0 40px;            /* Khoảng cách bên trong trái/phải của header */
+}
+
+.header .logo {
+    font-size: 22px;            /* Kích thước chữ logo */
+    font-weight: 700;           /* Độ đậm chữ logo */
+}
+
+.menu a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;              /* Tạo hiệu ứng mượt khi phóng to / đổi màu */
+}
+
+.menu a:hover {
+    color: #ffc107;                /* Màu chữ khi hover */
+    transform: scale(1.2);         /* Phóng to 20% khi hover */
+}
+
+
+.apply-btn {
+    background: #ffc107;        /* Màu nền nút APPLY NOW */
+    padding: 10px 20px;         /* Khoảng cách trong nút: 10px trên/dưới, 20px trái/phải */
+    border: none;               /* Không viền */
+    cursor: pointer;            /* Khi hover chuột, con trỏ thành tay */
+    font-weight: 600;           /* Độ đậm chữ nút */
+}
