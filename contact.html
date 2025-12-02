@@ -1,81 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />   <!-- Bộ ký tự UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Hiển thị đẹp trên điện thoại -->
     <title>Contact Us</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
+            font-family: Arial, sans-serif;   /* Font chữ toàn trang */
+            margin: 0;                        /* Xóa khoảng trắng mặc định */
             padding: 0;
-            background: #ffffff;
+            background: #ffffff;              /* Nền trắng */
         }
+
         .container {
-            display: flex;
-            padding: 50px;
-            max-width: 1200px;
-            margin: auto;
+            display: flex;                    /* Chia bố cục 2 cột */
+            padding: 50px;                    /* Khoảng cách bên trong */
+            max-width: 1200px;                /* Giới hạn độ rộng */
+            margin: auto;                     /* Canh giữa trang */
         }
+
         .left {
-            flex: 1;
-            padding-right: 40px;
-            border-right: 2px solid #ccc;
+            flex: 1;                          /* Chiếm 1 phần */
+            padding-right: 40px;              /* Cách phải */
+            border-right: 2px solid #ccc;     /* Đường kẻ giữa 2 cột */
         }
+
         .right {
-            flex: 1;
-            padding-left: 40px;
+            flex: 1;                          /* Chiếm 1 phần */
+            padding-left: 40px;               /* Cách trái */
         }
+
         label {
-            font-size: 14px;
-            font-weight: bold;
+            font-size: 14px;                  /* Cỡ chữ label */
+            font-weight: bold;                /* Chữ đậm */
         }
+
         input, textarea {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0 20px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 14px;
+            width: 100%;                      /* Full chiều ngang */
+            padding: 12px;                    /* Khoảng cách trong */
+            margin: 10px 0 20px;              /* Cách trên trái phải dưới */
+            border: 1px solid #ccc;           /* Viền xám */
+            border-radius: 6px;               /* Bo góc */
+            font-size: 14px;                  /* Cỡ chữ */
         }
+
         textarea {
-            height: 150px;
+            height: 150px;                    /* Tăng chiều cao ô nhập */
         }
+
         button {
-            background: #213821;
-            color: #fff;
-            padding: 12px 30px;
-            border: none;
-            border-radius: 6px;
-            font-size: 16px;
-            cursor: pointer;
+            background: #213821;              /* Màu nút */
+            color: #fff;                      /* Chữ trắng */
+            padding: 12px 30px;               /* Kích thước nút */
+            border: none;                     /* Không viền */
+            border-radius: 6px;               /* Bo góc */
+            font-size: 16px;                  /* Cỡ chữ */
+            cursor: pointer;                  /* Trỏ chuột dạng bàn tay */
         }
+
         h2 {
-            font-size: 32px;
+            font-size: 32px;                  /* Tiêu đề lớn */
         }
+
         .info {
-            margin-top: 20px;
-            line-height: 1.6;
+            margin-top: 20px;                 /* Khoảng cách trên */
+            line-height: 1.6;                 /* Giãn dòng */
         }
+
         .icon-row {
-            display: flex;
-            align-items: center;
-            margin-top: 20px;
-            font-size: 16px;
+            display: flex;                    /* Icon + text nằm 1 hàng */
+            align-items: center;              /* Canh giữa theo chiều dọc */
+            margin-top: 20px;                 /* Cách trên */
+            font-size: 16px;                  /* Cỡ chữ */
         }
+
         .icon-row span {
-            margin-left: 10px;
+            margin-left: 10px;                /* Cách icon 10px */
         }
+
         .socials {
-            margin-top: 40px;
-            font-size: 26px;
+            margin-top: 40px;                 /* Cách trên */
+            font-size: 26px;                  /* Cỡ icon */
         }
+
         .socials i {
-            margin-right: 20px;
-            cursor: pointer;
+            margin-right: 20px;               /* Khoảng cách giữa các icon */
+            cursor: pointer;                  /* Hover thành bàn tay */
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="left">
@@ -94,13 +109,21 @@
             <label>WHAT DO YOU HAVE IN MIND</label>
             <textarea placeholder="Please enter query..."></textarea>
 
-            <button>Submit</button>
+            <button>Submit</button>   <!-- Nút gửi -->
         </div>
 
         <div class="right">
-            <h2><a href="index.html" style="text-decoration:none; color:black;">Home</a> / Contact us</h2>
-            <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.</p>
+            <h2>
+                <a href="index.html" style="text-decoration:none; color:black;">
+                    Home
+                </a> 
+                / Contact us
+            </h2>
+
+            <p class="info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+            </p>
 
             <div class="icon-row">☎️ <span>+1258 3258 5679</span></div>
             <div class="icon-row">✉️ <span>hello@workik.com</span></div>

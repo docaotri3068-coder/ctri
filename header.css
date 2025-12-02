@@ -6,33 +6,36 @@
     color: white;               /* Màu chữ mặc định bên trong header */
     display: flex;              /* Dùng flexbox để sắp xếp các phần tử bên trong */
     align-items: center;        /* Canh giữa theo chiều dọc */
-    justify-content: space-between; /* Khoảng cách đều giữa logo, menu và nút */
-    padding: 0 40px;            /* Khoảng cách bên trong trái/phải của header */
+    justify-content: space-between; /* Canh đều khoảng cách giữa các phần trong header */
+    padding: 0 40px;            /* Khoảng cách hai bên trái/phải của header */
 }
 
 .header .logo {
-    font-size: 22px;            /* Kích thước chữ logo */
-    font-weight: 700;           /* Độ đậm chữ logo */
+    font-size: 22px;            /* Cỡ chữ logo */
+    font-weight: 700;           /* Chữ logo đậm */
 }
 
 .menu a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s;              /* Tạo hiệu ứng mượt khi phóng to / đổi màu */
+    color: white;               /* Màu chữ của menu */
+    margin: 0 15px;             /* Khoảng cách giữa các mục menu */
+    text-decoration: none;      /* Bỏ gạch chân */
+    font-weight: 500;           /* Độ đậm chữ */
+    transition: 0.3s;           /* Tạo hiệu ứng mượt khi hover */
 }
 
 .menu a:hover {
-    color: #ffc107;                /* Màu chữ khi hover */
-    transform: scale(1.2);         /* Phóng to 20% khi hover */
+    color: #ffc107;             /* Đổi màu chữ khi rê chuột */
+    transform: scale(1.2);      /* Phóng to 20% khi hover */
 }
 
-
 .apply-btn {
-    background: #ffc107;        /* Màu nền nút APPLY NOW */
-    padding: 10px 20px;         /* Khoảng cách trong nút: 10px trên/dưới, 20px trái/phải */
-    border: none;               /* Không viền */
-    cursor: pointer;            /* Khi hover chuột, con trỏ thành tay */
-    font-weight: 600;           /* Độ đậm chữ nút */
+    background: #ffc107;        /* Màu vàng cho nút Apply */
+    padding: 10px 20px;         /* Kích thước trong nút */
+    border: none;               /* Bỏ viền nút */
+    cursor: pointer;            /* Chuột chuyển thành bàn tay */
+    font-weight: 600;           /* Chữ đậm */
+}
+/* Khi rê chuột vào button */
+.apply-btn:hover {
+    background: green;           /* Đổi sang màu xanh */
 }

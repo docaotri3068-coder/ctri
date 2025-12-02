@@ -1,115 +1,119 @@
 /* BANNER */
 .banner {
-    background: url(havard.jpg); /* Đặt hình nền cho banner */
-    background-size: cover;       /* Hình nền phủ toàn bộ khung banner, không bị méo */
-    padding: 40px 70px;          /* Khoảng cách bên trong: 120px trên/dưới, 40px trái/phải */
-    color: white;                 /* Màu chữ trắng trong banner */
+    background: url(r34.jpg);    /* Ảnh nền banner */
+    background-size: cover;      /* Phủ full không méo */
+    padding: 100px 70px;         /* Chiều cao + khoảng cách 2 bên */
+    color: white;                /* Chữ màu trắng */
 }
 
 .banner-content {
-    width: 80%;          /* chiều rộng khung nội dung */
-    margin: 0 auto;      /* căn giữa khung nội dung */
-    text-align: center;  /* căn giữa các nội dung inline như button, text */
+    width: 80%;                  /* Độ rộng nội dung banner */
+    margin: 0 auto;              /* Canh giữa */
+    text-align: center;          /* Canh nội dung vào giữa */
 }
 
 .banner h1 {
-    font-size: 48px;              /* Kích thước chữ tiêu đề */
-    font-weight: 800;             /* Độ đậm chữ tiêu đề */
+    font-size: 48px;             /* Chữ lớn */
+    font-weight: 800;            /* Chữ siêu đậm */
 }
 
 .banner .start-btn {
-    margin-top: 15px;             /* Khoảng cách trên nút so với phần trên */
-    padding: 12px 25px;           /* Khoảng cách trong nút: 12px trên/dưới, 25px trái/phải */
-    background: #ffc107;        /* Màu nền nút */
-    border: none;                 /* Không viền */
-    font-weight: 600;             /* Độ đậm chữ nút */
+    margin-top: 15px;            /* Cách tiêu đề */
+    padding: 12px 25px;          /* Kích thước nút */
+    background: #ffc107;         /* Màu vàng */
+    border: none;                /* Không viền */
+    font-weight: 600;            /* Chữ đậm */
 }
 
 .banner-boxes {
-    display: flex;                /* Hiển thị các box theo hàng ngang */
-    gap: 25px;                    /* Khoảng cách giữa các box */
-    margin-top: 40px;             /* Khoảng cách trên so với nội dung banner */
+    display: flex;               /* 3 box nằm ngang */
+    gap: 30px;                   /* Khoảng cách giữa các box */
+    margin-top: 100px;            /* Cách nội dung trên */
+    margin-left: 30px;           /* Cách trái */
+    margin-right: 60px;          /* Cách phải */
 }
 
 .banner-boxes .box {
-    background: #0b2c59c0;        /* Màu nền bán trong suốt cho box */
-    padding: 20px;                /* Khoảng cách bên trong box */
-    width: 400px;                 /* Chiều rộng cố định của box */
-    border-radius: 5px;           /* Bo góc box */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng mượt */
+    background: #0b2c59c0;       /* Nền xanh đậm trong suốt */
+    padding: 20px;               /* Khoảng cách trong */
+    width: 400px;                /* Chiều rộng box */
+    border-radius: 5px;          /* Bo góc */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng hover */
 }
 
 .banner-boxes .box:hover {
-    transform: scale(1.05);       /* Phóng to khung box */
-    box-shadow: 0 8px 18px rgba(0,0,0,0.3); /* Đổ bóng đẹp khi hover */
+    transform: scale(1.05);      /* Phóng to 5% */
+    box-shadow: 0 8px 18px rgba(0,0,0,0.3); /* Đổ bóng đẹp */
 }
 
-
-    /* COURSES */
-    .courses {
-        text-align: center;           /* Canh giữa toàn bộ nội dung */
-        padding: 70px 40px;           /* Khoảng cách bên trong: 50px trên/dưới, 40px trái/phải */
-    }
-
-    .course-container {
-        display: grid;                /* Dùng grid để sắp xếp khóa học */
-        grid-template-columns: repeat(3, 1fr); /* 3 cột bằng nhau */
-        gap: 25px;                    /* Khoảng cách giữa các phần tử grid */
-        margin-top: 30px;             /* Khoảng cách trên so với tiêu đề */
-        max-width: 120Spx;            /* Giới hạn chiều rộng tối đa container */
-        margin-left: auto;            /* Căn trái tự động */
-        margin-right: auto;           /* Căn phải tự động → căn giữa container */
-    }
-
-    .course-item {
-        border: 1px solid #ddd;       /* Viền nhẹ quanh từng khóa học */
-        padding-bottom: 20px;         /* Khoảng cách dưới */
-        transition: transform 0.3s ease;   /* Hiệu ứng mượt khi phóng */
-        overflow: hidden;                  /* Ngăn nội dung tràn ra ngoài khi phóng */
-}
-    .course-item:hover {
-        transform: scale(1.07);            /* Phóng to nguyên khung */
-        border-color: #ff5722;             /* (tuỳ chọn) đổi viền khi hover cho đẹp */
+/* COURSES */
+.courses {
+    text-align: center;          /* Căn giữa */
+    padding: 70px 40px;          /* Khoảng cách trong */
+    background: linear-gradient(to bottom, #0b79d0, white); /* Nền gradient xanh → trắng */
 }
 
-        .course-item img {
-            width: 400px;        /* Chiều rộng ảnh (bạn muốn bao nhiêu thì đổi) */
-            height: 200px;       /* Chiều cao ảnh */
-            object-fit: cover;   /* Giữ tỉ lệ, cắt phần dư */
-            display: block;      /* Giúp ảnh không bị khoảng trắng dưới */
-            margin: 0 auto;      /* Căn giữa ảnh trong khung */
+.course-container {
+    display: grid;               /* Dùng grid 3 cột */
+    grid-template-columns: repeat(3, 1fr); /* 3 cột đều nhau */
+    gap: 25px;                   /* Khoảng cách giữa các item */
+    margin-top: 30px;            /* Cách trên */
+    max-width: 1200px;           /* Độ rộng tối đa */
+    margin-left: auto;           /* Căn giữa */
+    margin-right: auto;          /* Căn giữa */
 }
 
-    .read-btn {
-        margin-top: 10px;             /* Khoảng cách trên nút */
-        padding: 10 px 15px;            /* Khoảng cách trong nút */
-        background: #ff5722;          /* Màu nền nút */
-        color: white;                 /* Màu chữ */
-        border: none;                 /* Không viền */
-    }
+.course-item {
+    border: 1px solid #ddd;      /* Viền nhạt */
+    padding-bottom: 20px;        /* Cách dưới */
+    transition: transform 0.3s ease; /* Hiệu ứng phóng khi hover */
+    overflow: hidden;            /* Ẩn phần dư khi ảnh phóng */
+}
+
+.course-item:hover {
+    transform: scale(1.07);      /* Phóng to 7% */
+    border-color: #ff5722;       /* Đổi viền sang màu cam */
+}
+
+.course-item img {
+    width: 400px;                /* Rộng ảnh */
+    height: 200px;               /* Cao ảnh */
+    object-fit: cover;           /* Cắt cho ảnh không méo */
+    display: block;              /* Loại bỏ khoảng dư */
+    margin: 0 auto;              /* Căn giữa ảnh */
+}
+
+.read-btn {
+    margin-top: 10px;            /* Cách trên */
+    padding: 10px 15px;          /* Kích thước nút */
+    background: #ff5722;         /* Màu cam */
+    color: white;                /* Chữ trắng */
+    border: none;                /* Không viền */
+}
 
 /* LECTURERS */
 .lecturers {
-    text-align: center;           /* Canh giữa nội dung */
-    padding: 50px 40px;           /* Khoảng cách bên trong */
+    text-align: center;          /* Căn giữa */
+    padding: 50px 40px;          /* Khoảng cách trong */
+    background: linear-gradient( white); /* Xanh → trắng */
 }
 
 .lecturer-container {
-    display: flex;                /* Hiển thị giảng viên theo hàng ngang */
-    justify-content: center;      /* Căn giữa các giảng viên */
-    gap: 30px;                    /* Khoảng cách giữa các giảng viên */
-    margin-top: 30px;             /* Khoảng cách trên so với tiêu đề */
-    max-width: 1200px;            /* Giới hạn chiều rộng tối đa container */
-    margin-left: auto;            /* Căn trái tự động */
-    margin-right: auto;           /* Căn phải tự động → căn giữa container */
+    display: flex;               /* Dùng flex */
+    justify-content: center;     /* Căn giữa */
+    gap: 30px;                   /* Khoảng cách giữa các giảng viên */
+    margin-top: 30px;            /* Cách trên */
+    max-width: 1200px;           /* Giới hạn chiều rộng */
+    margin-left: auto;           /* Căn giữa */
+    margin-right: auto;          /* Căn giữa */
 }
 
 .lecturer-item img {
-    width: 300px;                 /* Chiều rộng ảnh giảng viên */
+    width: 300px;                /* Kích thước ảnh giảng viên */
 }
 
 .stars {
-    margin-top: 8px;              /* Khoảng cách trên so với tên giảng viên */
-    color: gold;                  /* Màu vàng cho sao */
-    font-size: 18px;              /* Kích thước chữ sao */
+    margin-top: 8px;             /* Khoảng cách trên */
+    color: gold;                 /* Màu vàng */
+    font-size: 18px;             /* Cỡ sao */
 }
