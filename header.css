@@ -34,6 +34,7 @@
     border: none;               /* Bỏ viền nút */
     cursor: pointer;            /* Chuột chuyển thành bàn tay */
     font-weight: 600;           /* Chữ đậm */
+    margin-right: 100px; 
 }
 /* Khi rê chuột vào button */
 .apply-btn:hover {

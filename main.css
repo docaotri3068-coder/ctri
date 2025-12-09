@@ -27,7 +27,7 @@
 
 .banner-boxes {
     display: flex;               /* 3 box nằm ngang */
-    gap: 30px;                   /* Khoảng cách giữa các box */
+    gap: 5px;                   /* Khoảng cách giữa các box */
     margin-top: 100px;            /* Cách nội dung trên */
     margin-left: 30px;           /* Cách trái */
     margin-right: 60px;          /* Cách phải */
@@ -109,8 +109,18 @@
 }
 
 .lecturer-item img {
-    width: 300px;                /* Kích thước ảnh giảng viên */
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;   /* Hiệu ứng mượt */
 }
+
+
+.lecturer-item img:hover {
+    transform: scale(1.05);   /* Phóng to nhẹ */
+}
+
 
 .stars {
     margin-top: 8px;             /* Khoảng cách trên */
