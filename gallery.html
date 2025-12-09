@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />   <!-- Đặt bộ mã ký tự -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Giao diện responsive -->
+    <title>DIRTY COIN</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;   /* Font chữ */
+            margin: 0;
+            padding: 20px;
+            background: #f3f3f3;             /* Nền xám nhạt */
+        }
+
+        h1 {
+            text-align: center;              /* Tiêu đề nằm giữa */
+        }
+
+        /* ====== GALLERY ====== */
+        .gallery {
+            display: grid;                   /* Dùng Grid để chia bố cục */
+            grid-template-columns: repeat(3, 1fr);  /* 3 cột bằng nhau */
+            gap: 10px;                       /* Khoảng cách giữa ảnh */
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;                     /* Ảnh tự căng theo khung */
+            height: 200px;                   /* Chiều cao cố định */
+            object-fit: cover;               /* Giữ tỉ lệ ảnh, cắt thừa */
+            border-radius: 8px;              /* Bo góc ảnh */
+
+            /* Hiệu ứng hover */
+            transition: transform 0.3s ease,  /* phóng to */
+                        box-shadow 0.3s ease; /* đổ bóng */
+            cursor: pointer;                 /* Con trỏ dạng bàn tay */
+        }
+
+        /* Hiệu ứng khi rê chuột */
+        .gallery img:hover {
+            transform: scale(1.08) translateY(-5px); /* Phóng to + nhấc ảnh lên */
+            box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.3); /* Bóng đổ mạnh hơn */
+        }
+
+        /* Responsive cho màn hình vừa */
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr); /* 2 cột */
+            }
+        }
+
+        /* Responsive cho màn hình nhỏ */
+        @media (max-width: 400px) {
+            .gallery {
+                grid-template-columns: 1fr;  /* 1 cột */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FIFTYSIX TEAM</h1>
+
+    <!-- Nút quay về trang Home -->
+    <p style="text-align:center; margin-bottom:20px;">
+        <a href="home.html" style="text-decoration:none; color:#0077cc; font-size:18px;">
+            ⬅ Quay về trang Home
+        </a>
+    </p>
+
+    <!-- Danh sách hình ảnh -->
+    <div class="gallery">
+        <img src="nissan.jpg" alt="Hình 1" />
+        <img src="2nissan.jpg" alt="Hình 2" />
+        <img src="22nissan.jpg" alt="Hình 3" />
+        <img src="eclipse2.jpg" alt="Hình 4" />
+        <img src="56team.jpg" alt="Hình 5" />
+        <img src="eclipse1.jpg" alt="Hình 6" />
+    </div>
+
+</body>
+</html>
